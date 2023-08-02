@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+	<title>Open Account</title>
+	<link rel="stylesheet" href="CreateAccount.css">
+</head>
+	
+	
+	<body>
+		<script src="CreateAccount.js">
+			
+		</script>
+		<h1>Open A Savings Account</h1>
+		<hr>
+		<h2>Personal Details</h2>
+		
+		<form>
+		<form>
+		
+		<table style="margin-right: auto; margin-left: auto">
+		
+		
+			<tr>
+				<td> 
+					<label>Title*</label> 
+				</td>
+				
+				<td> 
+					<input  type=text onkeyup="clearEmailErrMsg()" id="utitle"><span id="titlelErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>First Name*</label>
+				</td>
+				
+				<td>
+				 	<input  type="text" onkeyup="clearDobErrMsg()"   id="fname"><span id="fnameErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>Middle Name</label> 
+				</td>
+				
+				<td>
+					<input  type=text  onkeyup="clearNameErrMsg()"  id="mname"><span id="mnameErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>Last Name*</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="lname"><span id="lnameErr"></span><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Father's Name*</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="fatname"><span id="fatnameErr"></span><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Mother's Name*</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="motname"><span id="motnameErr"></span><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Mobile Number*</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="mobnum"><span id="mobnum"></span><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Email ID</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="email"><span id="emailErr"></span><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Aadhar Card Number*</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="aadhar"><span id="aadharErr"></span><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Date of Birth*</label>
+				</td>
+				<td>
+					 <input  type="date" onkeyup="clearPassErrMsg()" id="dob"><span id="dobErr"></span><br>
+				</td>
+			
+		</form>
+	    <br>		
+		</table>	
+		<table>
+        <h3>Residential Address</h3>
+		
+		
+		<form>
+	    
+		
+		<table style="margin-right: auto; margin-left: auto">
+		
+		
+			<tr>
+				<td> 
+					<label>a)Address Line 1*</label> 
+				</td>
+				
+				<td> 
+					<input  type=text onkeyup="clearEmailErrMsg()" id="uemail"><span id="emailErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>b)Address Line2*</label>
+				</td>
+				
+				<td>
+				 	<input  type="text" onkeyup="clearDobErrMsg()"   id="udob"><span id="dobErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>c)Landmark</label> 
+				</td>
+				
+				<td>
+					<input  type=text  onkeyup="clearNameErrMsg()"  id="landmark"><span id="landmarkErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>d)State*</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="state"><span id="stateErr"></span><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>e)City*</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="city"><span id="cityErr"></span><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>f)Pincode*</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="pincode"><span id="pincodeErr"></span><br>
+				</td>
+		</form>
+		
+		</table>
+		
+		
+		
+		<table>
+        <h3>Permanent Address</h3>
+        	
+		<input type = "checkbox" unchecked> Permanent Address same as Mailing Address
+
+		
+		<form>
+	    
+		
+		<table style="margin-right: auto; margin-left: auto">
+		
+		
+			<tr>
+				<td> 
+					<label>a)Address Line 1*</label> 
+				</td>
+				
+				<td> 
+					<input  type=text onkeyup="clearEmailErrMsg()" id="uemail"><span id="emailErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>b)Address Line2*</label>
+				</td>
+				
+				<td>
+				 	<input  type="text" onkeyup="clearDobErrMsg()"   id="udob"><span id="dobErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>c)Landmark</label> 
+				</td>
+				
+				<td>
+					<input  type=text  onkeyup="clearNameErrMsg()"  id="uname"><span id="nameErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>d)State*</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="upass"><span id="passErr"></span><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>e)City*</label>
+				</td>
+				<td>
+					 <input  type="text" onkeyup="clearPassErrMsg()" id="upass"><span id="passErr"></span><br>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>f)Pincode*</label>
+				</td>
+		</form>
+		
+		</table>
+		<form>
+	    
+		
+		<table style="margin-right: auto; margin-left: auto">
+		<h3>Occupation Details</h3>
+		
+			<tr>
+				<td> 
+					<label>a)Occupation Type*</label> 
+				</td>
+				
+				<td> 
+					<input  type=text onkeyup="clearEmailErrMsg()" id="uemail"><span id="emailErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>b)Source of Income*</label>
+				</td>
+				
+				<td>
+				 	<input  type="text" onkeyup="clearDobErrMsg()"   id="udob"><span id="dobErr"></span><br>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>c)Gross Annual Income</label> 
+				</td>
+				
+				<td>
+					<input  type=text  onkeyup="clearNameErrMsg()"  id="uname"><span id="nameErr"></span><br>
+				</td>
+			</tr>
+			
+			
+		</form>
+		
+		</table>
+		
+		<h4>Debit/ATM Card</h4>
+		   <tr>
+		       Do you want a credit card ?*
+		   </tr>
+		   <br>
+		   <input type = "checkbox" unchecked> Opt forNet Banking
+		   		   <br>
+		   <input type = "checkbox" unchecked> I agree......
+		   <br>
+		   <button type="submit">Submit</button>
+		</form>
+	</body>
+
+</html>
