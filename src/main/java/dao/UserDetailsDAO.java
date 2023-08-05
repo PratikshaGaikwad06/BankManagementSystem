@@ -2,6 +2,8 @@ package dao;
 
 import java.util.List;
 
+import entities.UserDetails;
+
 public interface UserDetailsDAO {
     void addUser(UserDetails userDetails);
     UserDetails getUserById(int userId);

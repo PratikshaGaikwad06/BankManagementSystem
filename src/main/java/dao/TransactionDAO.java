@@ -2,6 +2,8 @@ package dao;
 
 import java.util.List;
 
+import entities.Transaction;
+
 public interface TransactionDAO {
     void addTransaction(Transaction transaction);
     Transaction getTransactionById(int transactionId);
