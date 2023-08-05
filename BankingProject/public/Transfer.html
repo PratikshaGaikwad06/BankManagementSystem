@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+	<script src="Transfer.js">	</script>
+
+	<h1>Transfer Funds</h1>
+	<hr>
+
+
+
+
+	</form style="margin-right: auto; margin-left: auto">
+	<table style="margin-right: auto; margin-left: auto">
+		<h2>Add Details</h2>
+
+		<tr>
+			<td>
+				<label>From Account</label>
+			</td>
+
+			<td>
+				<input type="text" id="accno" oninput="validateAccno(this)">
+						<span id="errorAccno" style="color: red;"></span>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<label>To Account</label>
+			</td>
+
+			<td>
+				<input type="text" id="accno2" oninput="validateAccno2(this)">
+						<span id="errorAccno2" style="color: red;"></span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Amount(in Rs).</label>
+			</td>
+
+			<td>
+				<input type="text" id="amount" oninput="validateamount(this)">
+						<span id="erroramount" style="color: red;"></span>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<label>Transaction Date</label>
+			</td>
+
+			<td>
+				<input type="date" id="name" required><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Remark</label>
+			</td>
+
+			<td>
+				<input type=text"><span id="remark"></span><br>
+			</td>
+		</tr>
+		<td><input type="submit" value="Submit"></td>
+		
+		</form>
+
+</body>
+
+</html>

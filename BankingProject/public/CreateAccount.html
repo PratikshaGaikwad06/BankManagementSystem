@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Open Account</title>
+	<link rel="stylesheet" href="CreateAccount.css">
+</head>
+
+
+<body>
+	<script src="CreateAccount.js">
+
+	</script>
+	<h1>Open A Savings Account</h1>
+	<hr>
+	<h2>Personal Details</h2>
+
+	<form>
+		<form>
+
+			<table style="margin-right: auto; margin-left: auto">
+
+
+				<tr>
+					<td>
+						<label>    Title*     </label>
+    					<select id="myDropdown" onchange="handleDropdownChange(this)">
+       					<!-- Default blank option -->
+        				<option value="" disabled selected>Select an option</option>
+    					</select>
+					</td>
+					
+				</tr>
+
+				<tr>
+					<td>
+						<label>First Name*</label>
+					</td>
+
+					<td>
+						<input type="text" id="firstname" oninput="validateFirstName(this)">
+						<span id="errorFirstname" style="color: red;"></span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Middle Name</label>
+					</td>
+
+					<td>
+						<input type="text" id="middlename" oninput="validateMiddleName(this)">
+						<span id="errorMiddleName" style="color: red;"></span>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Last Name*</label>
+					</td>
+					<td>
+						<input type="text" id="lastname" oninput="validateLastName(this)">
+						<span id="errorLastname" style="color: red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Father's Name*</label>
+					</td>
+					<td>
+						<input type="text" id="fathername" oninput="validateFatherName(this)">
+						<span id="errorFatherName" style="color: red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Mother's Name*</label>
+					</td>
+					<td>
+						<input type="text" id="mothername" oninput="validateMotherName(this)">
+						<span id="errorMotherName" style="color: red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Mobile Number*</label>
+					</td>
+					<td>
+						<input type="text" id="mobno" oninput="validateMobno(this)">
+						<span id="errorMobno" style="color: red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Email ID</label>
+					</td>
+					<td>
+						<input type="text" id="emailField" oninput="validateEmail(this)">
+						<span id="errorText" style="color: red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Aadhar Card Number*</label>
+					</td>
+					<td>
+						<input type="text" id="adno" oninput="validateAdno(this)">
+						<span id="errorAdno" style="color: red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Date of Birth*</label>
+					</td>
+					<td>
+						<input type="date" id="dobField" onchange="validateDateOfBirth(this)">
+						<span id="dobErr" style="color: red;"></span>
+					</td>
+
+		</form>
+		<br>
+		</table>
+		<table>
+			<h3>Residential Address</h3>
+
+
+			<form>
+
+
+				<table style="margin-right: auto; margin-left: auto">
+
+
+					<tr>
+						
+
+						<td>
+							<label for="residentialAddressLine1">Address Line 1*</label>
+ 						    <input type="text" id="residentialAddressLine1">
+						</td>
+					</tr>
+
+					<tr>
+						
+
+						<td>
+							<label for="residentialAddressLine2">Address Line 2*</label>
+                            <input type="text" id="residentialAddressLine2">
+						</td>
+					</tr>
+
+					<tr>
+						
+
+						<td>
+							<label for="residentialLandmark">Landmark*</label>
+                            <input type="text" id="residentialLandmark">
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td>
+							<label for="residentialState">State*</label>
+                            <input type="text" id="residentialState">
+						</td>
+					</tr>
+					<tr>
+						
+						<td>
+							<label for="residentialCity">City*</label>
+                            <input type="text" id="residentialCity">
+						</td>
+					</tr>
+					<tr>
+						
+						<td>
+						<label for="residentialPincode">Pin Code*</label>
+                        <input type="text" id="residentialPincode">
+					</td>
+			</form>
+
+		</table>
+
+
+
+		<table>
+			<h3>Permanent Address</h3>
+
+			<input type="checkbox" id="copyAddressCheckbox" onclick="copyResidentialToPermanent()">
+            <label for="copyAddressCheckbox">Permanent Address same as Residential Address</label>
+
+
+			<form>
+
+
+				<table style="margin-right: auto; margin-left: auto">
+
+
+					<tr>
+						
+
+						<td>
+							<label for="permanentAddressLine1">Address Line 1*</label>
+                            <input type="text" id="permanentAddressLine1" oninput="validateAdno(this)">
+						    <span id="errorAdno" style="color: red;"></span>
+						</td>
+					</tr>
+
+					<tr>
+						
+
+						<td>
+							<label for="permanentAddressLine2">Address Line 2*</label>
+ 			                <input type="text" id="permanentAddressLine2">
+						</td>
+					</tr>
+
+					<tr>
+						
+
+						<td>
+							<label for="permanentLandmark">Landmark*</label>
+                            <input type="text" id="permanentLandmark">
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td>
+							<label for="permanentState">State*</label>
+                            <input type="text" id="permanentState">
+						</td>
+					</tr>
+					<tr>
+						
+						<td>
+							  <label for="permanentCity">City*</label>
+                              <input type="text" id="permanentCity">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="permanentPincode">Pin Code*</label>
+                            <input type="text" id="permanentPincode">
+						</td>
+			</form>
+
+		</table>
+		<form>
+
+
+			<table style="margin-right: auto; margin-left: auto">
+				<h3>Occupation Details</h3>
+
+				<tr>
+					<td>
+						<label>a)Occupation Type*</label>
+						<select id="myDropdown2" onchange="handleDropdownChange2(this)">
+       					<!-- Default blank option -->
+        				<option value="" disabled selected>Select an option</option>
+    					</select>
+					</td>
+					
+
+					
+				</tr>
+
+				<tr>
+					<td>
+						<label>b)Source of Income *</label>
+						<select id="myDropdown3" onchange="handleDropdownChange3(this)">
+       					<!-- Default blank option -->
+        				<option value="" disabled selected>Select an option</option>
+    					</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>b)Gross Annual Income *</label>
+						<select id="myDropdown4" onchange="handleDropdownChange4(this)">
+       					<!-- Default blank option -->
+        				<option value="" disabled selected>Select an option</option>
+    					</select>
+					</td>
+				</tr>
+
+
+		</form>
+
+		</table>
+
+		<h4>Debit/ATM Card</h4>
+		<tr>
+			Do you want a credit card ?*
+		</tr>
+		<br>
+        <form onsubmit="return validateForm()" action="submit_form.php" method="POST">
+    
+
+         <input type="checkbox" id="agreeCheckbox">
+         <label for="agreeCheckbox">I Agree to the Terms and Conditions</label>
+         <br>
+
+         <button type="submit">Submit</button>
+        </form>
+</body>
+
+</html>
