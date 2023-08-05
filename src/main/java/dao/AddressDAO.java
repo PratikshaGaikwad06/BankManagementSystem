@@ -3,6 +3,8 @@ package dao;
 
 import java.util.List;
 
+import entities.Address;
+
 public interface AddressDAO {
     void addAddress(Address address);
     Address getAddressById(int addressId);

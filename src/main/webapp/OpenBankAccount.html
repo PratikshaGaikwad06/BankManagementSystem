@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Open Account</title>
+	<link rel="stylesheet" href="CreateAccount.css">
+</head>
+
+<body>
+	<script src="CreateAccount.js"></script>
+	<h1>Open A Savings Account</h1>
+	<hr>
+	<h2>Personal Details</h2>
+
+	<form action="CreateBankAccount.jsp">
+		<table style="margin-right: auto; margin-left: auto">
+			<tr>
+				<td>
+					<label>Title*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearEmailErrMsg()" id="utitle"><span id="titlelErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>First Name*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearDobErrMsg()" name="fname" required><span id="fnameErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Middle Name</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearNameErrMsg()" name="mname"><span id="mnameErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Last Name*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" name="lname" required><span id="lnameErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Father's Name*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="fatname"><span id="fatnameErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Mother's Name*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="motname"><span id="motnameErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Mobile Number*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="mobnum"><span id="mobnum"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Email ID</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="email"><span id="emailErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Aadhar Card Number*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="aadhar"><span id="aadharErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Date of Birth*</label>
+				</td>
+				<td>
+					<input type="date" onkeyup="clearPassErrMsg()" id="dob"><span id="dobErr"></span>
+				</td>
+			</tr>
+		</table>
+
+		<h3>Residential Address</h3>
+
+		<table style="margin-right: auto; margin-left: auto">
+			<tr>
+				<td>
+					<label>a)Address Line 1*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearEmailErrMsg()" id="uemail"><span id="emailErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>b)Address Line2*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearDobErrMsg()" id="udob"><span id="dobErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>c)Landmark</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearNameErrMsg()" id="landmark"><span id="landmarkErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>d)State*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="state"><span id="stateErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>e)City*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="city"><span id="cityErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>f)Pincode*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="pincode"><span id="pincodeErr"></span>
+				</td>
+			</tr>
+		</table>
+
+		<h3>Permanent Address</h3>
+
+		<input type="checkbox" unchecked> Permanent Address same as Mailing Address
+
+		<table style="margin-right: auto; margin-left: auto">
+			<tr>
+				<td>
+					<label>a)Address Line 1*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearEmailErrMsg()" id="uemail"><span id="emailErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>b)Address Line2*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearDobErrMsg()" id="udob"><span id="dobErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>c)Landmark</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearNameErrMsg()" id="uname"><span id="nameErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>d)State*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="upass"><span id="passErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>e)City*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="upass"><span id="passErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>f)Pincode*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearPassErrMsg()" id="upincode"><span id="pincodeErr"></span>
+				</td>
+			</tr>
+		</table>
+
+		<h3>Occupation Details</h3>
+
+		<table style="margin-right: auto; margin-left: auto">
+			<tr>
+				<td>
+					<label>a)Occupation Type*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearEmailErrMsg()" id="utitle"><span id="emailErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>b)Source of Income*</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearDobErrMsg()" id="udob"><span id="dobErr"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>c)Gross Annual Income</label>
+				</td>
+				<td>
+					<input type="text" onkeyup="clearNameErrMsg()" id="uname"><span id="nameErr"></span>
+				</td>
+			</tr>
+		</table>
+
+		<h4>Debit/ATM Card</h4>
+		<tr>
+			<td>Do you want a credit card ?*</td>
+		</tr>
+		<br>
+		<input type="checkbox" unchecked> Opt for Net Banking
+		<br>
+		<input type="checkbox" unchecked> I agree...
+		<br>
+		<input type=submit name=submit value="Submit">
+	</form>
+</body>
+
+</html>
